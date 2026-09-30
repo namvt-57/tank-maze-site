@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tank Maze: War Puzzle</title>
+  <meta name="description" content="Tank Maze: War Puzzle - chiến đấu xe tăng chiến thuật trong mê cung.">
+  <style>
+    :root { --bg:#06101a; --panel:#0d1d2a; --line:#1b5268; --cyan:#6eeaff; --orange:#ffbd63; --muted:#b4c8d4; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:#eefaff; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .hero { min-height:600px; display:grid; place-items:center; padding:48px 20px; background:linear-gradient(90deg,rgba(3,12,20,.97) 0%,rgba(3,12,20,.68) 46%,rgba(3,12,20,.25)),url('assets/play_store_feature_graphic.png') center/cover; }
+    .hero-inner { width:min(1120px,100%); }
+    .brand { display:flex; align-items:center; gap:18px; }
+    .brand img { width:76px; height:76px; border-radius:20px; box-shadow:0 0 28px rgba(110,234,255,.35); }
+    h1 { font-size:clamp(38px,7vw,76px); line-height:1.02; margin:22px 0 14px; max-width:680px; }
+    h1 span { color:var(--cyan); }
+    .lead { color:var(--muted); font-size:clamp(18px,2.5vw,24px); max-width:620px; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .button { display:inline-block; padding:12px 22px; border-radius:10px; border:1px solid var(--cyan); color:#02131a; background:var(--cyan); font-weight:700; text-decoration:none; }
+    .button.secondary { color:var(--cyan); background:transparent; }
+    main { width:min(1120px,100%); margin:auto; padding:52px 20px 76px; }
+    h2 { color:var(--cyan); font-size:30px; margin:0 0 22px; }
+    .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:22px; }
+    .card b { color:var(--orange); font-size:19px; }
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
+    .gallery img { width:100%; display:block; border-radius:12px; border:1px solid var(--line); }
+    footer { border-top:1px solid var(--line); color:var(--muted); padding:24px 20px; text-align:center; }
+    footer a { color:var(--cyan); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand"><img src="assets/play_store_icon.png" alt="Tank Maze icon"><strong>Tank Maze</strong></div>
+      <h1>Vượt mê cung.<br><span>Làm chủ chiến trường.</span></h1>
+      <p class="lead">Game xe tăng chiến thuật cho mobile. Di chuyển bốn hướng, chọn góc bắn, dùng bom đúng lúc và tìm cửa thoát trước khi kẻ địch bao vây.</p>
+      <div class="actions">
+        <a class="button" href="#screenshots">Xem hình ảnh</a>
+        <a class="button secondary" href="https://namvt-57.github.io/tank-maze-privacy/">Chính sách quyền riêng tư</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>Chiến đấu theo cách của bạn</h2>
+      <div class="features">
+        <div class="card"><b>🎯 Bắn chính xác</b><br>Tầm bắn bốn ô và điều khiển vuốt giúp mỗi phát đạn có chủ đích.</div>
+        <div class="card"><b>💣 Bom chiến thuật</b><br>Vuốt quanh nút bắn để chọn bom nổ hoặc bom băng trong tích tắc.</div>
+        <div class="card"><b>🛡️ Xe tăng riêng</b><br>Mở khóa các mẫu xe Heavy, Scout và Assault với thuộc tính khác nhau.</div>
+        <div class="card"><b>🌊 Địa hình nguy hiểm</b><br>Vượt qua cỏ, nước, bùn và các khu vực đặc biệt để tìm lối ra.</div>
+      </div>
+    </section>
+    <section id="screenshots" style="margin-top:56px">
+      <h2>Hình ảnh trong game</h2>
+      <div class="gallery">
+        <img src="store_assets/screenshots/01-gameplay.png" alt="Gameplay Tank Maze">
+        <img src="store_assets/screenshots/04-main-menu.png" alt="Menu chính Tank Maze">
+        <img src="store_assets/screenshots/05-garage-tanks.png" alt="Gara xe tăng">
+        <img src="store_assets/screenshots/03-garage-ammo.png" alt="Gara đạn">
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 Tank Maze · <a href="https://namvt-57.github.io/tank-maze-privacy/">Privacy Policy</a></footer>
+</body>
+</html>
